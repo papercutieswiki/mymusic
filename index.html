@@ -6,7 +6,7 @@
     <style>
         @font-face {
             font-family: 'SF UI Display';
-            src: url('SFUIDisplay-Regular.ttf') format('opentype');
+            src: url('SFUIDisplay-Regular.ttf') format('truetype');
         }
 
         body {
@@ -25,7 +25,7 @@
             width: 1920px;
             text-align: center;
             top: 130px; 
-            font-size: 14px;
+            font-size: 19px;
             color: #808080;
             letter-spacing: 0.5px;
         }
@@ -47,6 +47,15 @@
             width: 317px;
         }
 
+        .artist-name {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #808080;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
         .image-container {
             width: 317px;
             height: 234px;
@@ -61,17 +70,8 @@
             transition: filter 0.3s ease;
         }
 
-        .artist-name {
-            margin-top: 15px;
-            font-size: 14px;
-            color: #808080;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            text-align: center;
-        }
-
         .card-wrapper:hover .gallery-image {
-            filter: brightness(70%);
+            filter: brightness(40%);
         }
 
         .card-wrapper:hover .artist-name {
@@ -85,24 +85,24 @@
 
     <div class="gallery-container">
         <a href="#papercuties" class="card-wrapper">
+            <div class="artist-name">papercuties</div>
             <div class="image-container">
                 <img src="papercuties1.png" alt="Papercuties" class="gallery-image">
             </div>
-            <div class="artist-name">papercuties</div>
         </a>
 
         <a href="#marie" class="card-wrapper">
+            <div class="artist-name">marie</div>
             <div class="image-container">
                 <img src="marie1.png" alt="Marie" class="gallery-image">
             </div>
-            <div class="artist-name">marie</div>
         </a>
 
         <a href="#hershel" class="card-wrapper">
+            <div class="artist-name">hershel</div>
             <div class="image-container">
                 <img src="hershel1.png" alt="Hershel" class="gallery-image">
             </div>
-            <div class="artist-name">hershel</div>
         </a>
     </div>
 
